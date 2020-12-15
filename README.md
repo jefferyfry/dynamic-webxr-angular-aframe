@@ -5,6 +5,8 @@ This code repository supports the **JavaScript and Friends Meetup**: _Create Dyn
 Visit the following link for more info.
 [https://jfrog.com/shownote/javascript-webxr-jsandfriends-12-2020/](https://jfrog.com/shownote/javascript-webxr-jsandfriends-12-2020/)
 
+Visit the AFrame Demo: [https://jefferyfry.github.io/dynamic-webxr-angular-aframe/](https://jefferyfry.github.io/dynamic-webxr-angular-aframe/)
+
 ---
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
