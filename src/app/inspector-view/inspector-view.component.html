@@ -1,0 +1,14 @@
+<div style="height: 100%; width: 100%; padding: 0; " xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:svg="">
+  <ui-context-menu [matMenuTriggerFor]="main" #menu>
+    <mat-menu #main="matMenu">
+      <ng-template matMenuContent>
+
+      </ng-template>
+    </mat-menu>
+  </ui-context-menu>
+  <app-inspector
+    class="inspector"
+    [model]="inspectorModel"
+    (actionFired)="onActionFired($event)"
+  ></app-inspector>
+</div>

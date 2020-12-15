@@ -1,0 +1,21 @@
+<mat-drawer-container autosize>
+  <mat-drawer class="inspector-view" mode="side" [ngStyle]="{ 'width.em': sidenavWidth }" opened="true" position="start">
+    <mat-toolbar (click)="toggle()">
+      <mat-icon>visibility</mat-icon>
+      <span *ngIf="isInspectorViewExpanded">&nbsp;Inspect</span>
+      <span *ngIf="isInspectorViewExpanded" style="width: 100%">&nbsp;</span>
+      <mat-icon *ngIf="isInspectorViewExpanded">chevron_right</mat-icon>
+      <mat-icon *ngIf="!isInspectorViewExpanded" >chevron_left</mat-icon>
+    </mat-toolbar>
+    <div *ngIf="isInspectorViewExpanded"><app-inspector-view></app-inspector-view></div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar>
+      <mat-icon>360</mat-icon>
+      <span>&nbsp;WebXR View</span>
+    </mat-toolbar>
+    <app-ar-view></app-ar-view>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+<router-outlet></router-outlet>

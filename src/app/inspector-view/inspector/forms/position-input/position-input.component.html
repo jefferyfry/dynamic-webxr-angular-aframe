@@ -1,0 +1,13 @@
+<div role="group" class="position-input-container" [formGroup]="parts" [attr.aria-describedby]="describedBy" [attr.aria-labelledby]="_formField?.getLabelId()">
+  <div class="position-input-row">
+    <div>x:</div><div class="btn" (click)="incrementX()">+</div><input id="x" class="position-input-element" aria-label="x" formControlName="x" size="3" [value]="value.x | number:formatScale" (click)="selectAll($event)"/><div class="btn" (click)="decrementX()">-</div>
+  </div>
+  <span class="position-input-spacer">&ndash;</span>
+  <div class="position-input-row">
+    <div>y:</div><div class="btn" (click)="incrementY()">+</div><input id="y" class="position-input-element" aria-label="y" formControlName="y" size="3" [value]="value.y | number:formatScale" (click)="selectAll($event)"/><div class="btn" (click)="decrementY()">-</div>
+  </div>
+  <span class="position-input-spacer">&ndash;</span>
+  <div class="position-input-row">
+    <div>z:</div><div class="btn" (click)="incrementZ()">+</div><input id="z" class="position-input-element" aria-label="z" formControlName="z" size="3" [value]="value.z | number:formatScale" (click)="selectAll($event)"/><div class="btn" (click)="decrementZ()">-</div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<div role="group" class="integer-input-container" [attr.aria-describedby]="describedBy" [attr.aria-labelledby]="_formField?.getLabelId()">
+  <div class="integer-input-row">
+    <div class="btn" (click)="incrementValue()">+</div><input class="integer-input-element" aria-label="value" [formControl]="formControl" [value]="value" size="3" (input)="_handleInput()" (click)="selectAll($event)"/><div class="btn" (click)="decrementValue()">-</div>
+  </div>
+</div>

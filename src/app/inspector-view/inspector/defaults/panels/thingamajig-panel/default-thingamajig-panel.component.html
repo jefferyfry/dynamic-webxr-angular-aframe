@@ -1,0 +1,56 @@
+<mat-expansion-panel [expanded]="false" togglePosition="after" class="expansion-panel">
+  <mat-expansion-panel-header class="panel-header">
+    <mat-icon>category</mat-icon>
+    <md-panel-title class="panel-title">
+      <div *ngIf="model.name.length < 25; else elseBlock">{{model.name}}</div>
+      <ng-template #elseBlock>{{model.name | slice:0:25}}...</ng-template>
+    </md-panel-title>
+  </mat-expansion-panel-header>
+  <mat-form-field class="panel-form-field">
+    <mat-label>Value</mat-label>
+    <textarea matInput [(ngModel)]="model.value" (ngModelChange)="update()" (click)="selectAll($event)"></textarea>
+  </mat-form-field>
+  <mat-form-field class="panel-form-field">
+    <mat-label>Position</mat-label>
+    <position-input [(ngModel)]="model.position" (ngModelChange)="update()" [decimals]="0"></position-input>
+  </mat-form-field>
+  <mat-form-field class="panel-form-field">
+    <mat-label>Rotation</mat-label>
+    <rotation-input [(ngModel)]="model.rotation" (ngModelChange)="update()" [decimals]="0"></rotation-input>
+  </mat-form-field>
+  <mat-form-field class="panel-form-field">
+    <mat-label>Scale</mat-label>
+    <scale-input [(ngModel)]="model.scale" (ngModelChange)="update()" [decimals]="1"></scale-input>
+  </mat-form-field>
+  <mat-form-field class="panel-form-field">
+    <mat-label>Font Color</mat-label>
+    <input matInput type="color" [(ngModel)]="model.fontColor" (ngModelChange)="update()">
+  </mat-form-field>
+  <mat-form-field class="panel-form-field">
+    <mat-label>Font</mat-label>
+    <mat-select [(ngModel)]="model.font" (ngModelChange)="update()">
+      <mat-option value="roboto">roboto</mat-option>
+      <mat-option value="dejavu">dejavu</mat-option>
+      <mat-option value="exo2bold">exo2bold</mat-option>
+      <mat-option value="exo2semibold">exo2semibold</mat-option>
+      <mat-option value="kelsonsans">kelsonsans</mat-option>
+      <mat-option value="monoid">monoid</mat-option>
+      <mat-option value="mozillavr">mozillavr</mat-option>
+      <mat-option value="sourcecodepro">sourcecodepro</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="panel-form-field">
+    <mat-label>Align</mat-label>
+    <mat-select [(ngModel)]="model.align" (ngModelChange)="update()">
+      <mat-option value="left">left</mat-option>
+      <mat-option value="center">center</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="panel-form-field">
+    <mat-label>3D Model</mat-label>
+    <mat-select [(ngModel)]="model.src" (ngModelChange)="update()">
+      <mat-option value="assets/3d/normal-spidey.glb">Normal Spidey</mat-option>
+      <mat-option value="assets/3d/morales-spidey.glb">Morales Spidey</mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-expansion-panel>

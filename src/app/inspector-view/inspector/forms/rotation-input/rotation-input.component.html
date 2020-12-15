@@ -1,0 +1,13 @@
+<div role="group" class="rotation-input-container" [formGroup]="parts" [attr.aria-describedby]="describedBy" [attr.aria-labelledby]="_formField?.getLabelId()">
+  <div class="rotation-input-row">
+    <div class="rotation-input-input">pitch:</div><div class="btn" (click)="incrementPitch()">+</div><input id="pitch" class="rotation-input-element" aria-label="pitch" formControlName="pitch" size="3" [value]="value.pitch | number:formatScale" (click)="selectAll($event)"/><div class="btn" (click)="decrementPitch()">-</div>
+  </div>
+  <span class="rotation-input-spacer">&ndash;</span>
+  <div class="rotation-input-row">
+    <div class="rotation-input-input">yaw:</div><div class="btn" (click)="incrementYaw()">+</div><input id="yaw" class="rotation-input-element" aria-label="yaw" formControlName="yaw" size="3" [value]="value.yaw | number:formatScale" (click)="selectAll($event)"/><div class="btn" (click)="decrementYaw()">+</div>
+  </div>
+  <span class="rotation-input-spacer">&ndash;</span>
+  <div class="rotation-input-row">
+    <div class="rotation-input-input">roll:</div><div class="btn" (click)="incrementRoll()">+</div><input id="roll" class="rotation-input-element" aria-label="roll" formControlName="roll" size="3" [value]="value.roll | number:formatScale" (click)="selectAll($event)"/><div class="btn" (click)="decrementRoll()">+</div>
+  </div>
+</div>
