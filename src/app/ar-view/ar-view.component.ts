@@ -69,6 +69,6 @@ export class ArViewComponent implements OnInit {
   }
 
   addNewThingamajig($event: MouseEvent) {
-    this.store.dispatch(addThingamajig({posX:Math.random()*1, posY:Math.random()*1, posZ:1}));
+    this.store.dispatch(addThingamajig({posX:0, posY:0, posZ:0}));
   }
 }

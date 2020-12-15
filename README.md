@@ -1,5 +1,11 @@
 # Create Dynamic WebXR experiences with Angular and A-Frame
 
+This code repository supports the **JavaScript and Friends Meetup**: _Create Dynamic WebXR experiences with Angular and A-Frame_.
+
+Visit the following link for more info.
+[https://jfrog.com/shownote/javascript-webxr-jsandfriends-12-2020/](https://jfrog.com/shownote/javascript-webxr-jsandfriends-12-2020/)
+
+---
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
 ## Development server
