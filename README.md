@@ -1,5 +1,7 @@
 # Create Dynamic WebXR experiences with Angular and A-Frame
 
+[![Git](https://app.soluble.cloud/api/v1/public/badges/fca8b56d-09f7-4828-bc37-8588a82135a4.svg?orgId=604336610407)](https://app.soluble.cloud/repos/details/github.com/jefferyfry/dynamic-webxr-angular-aframe?orgId=604336610407)  
+
 This code repository supports the **JavaScript and Friends Meetup**: _Create Dynamic WebXR experiences with Angular and A-Frame_.
 
 Visit the following link for more info.
